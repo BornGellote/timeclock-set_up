@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="14px" viewBox="0 0 18 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>graph icon active</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.85">
+        <g id="dashboard-5-copy" transform="translate(-198.000000, -831.000000)" fill="#1D3550">
+            <g id="total-hours" transform="translate(-234.000000, 811.000000)">
+                <g id="graph-icon-active" transform="translate(432.000000, 20.000000)">
+                    <polygon id="Fill-1" points="9.60075 13.3368421 12.60075 13.3368421 12.60075 0.0736842105 9.60075 0.0736842105"></polygon>
+                    <polygon id="Fill-2" points="5.10075 13.3368421 8.10075 13.3368421 8.10075 9.21089474 5.10075 9.21089474"></polygon>
+                    <polygon id="Fill-3" points="0.60075 13.3368421 3.60075 13.3368421 3.60075 6.55863158 0.60075 6.55863158"></polygon>
+                    <polygon id="Fill-4" points="14.10075 13.3368421 17.10075 13.3368421 17.10075 2.43084211 14.10075 2.43084211"></polygon>
+                    <path d="M17.699625,13.6319474 L0.300375,13.6319474 C0.134625,13.6319474 0,13.4993158 0,13.3368421 C0,13.1743684 0.134625,13.0417368 0.300375,13.0417368 L17.699625,13.0417368 C17.865375,13.0417368 18,13.1743684 18,13.3368421 C18,13.4993158 17.865375,13.6319474 17.699625,13.6319474 Z" id="Fill-5"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

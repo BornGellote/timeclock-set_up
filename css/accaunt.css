@@ -1,0 +1,906 @@
+/* GLOBAL ACCAUNT STYLE */
+
+body{
+ 	background: url('../img/bacgraund.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;
+ }
+
+@font-face {
+    font-family: 'lucida_grandebold';
+    src: url('../fonts/8292-webfont.woff2') format('woff2'),
+         url('../fonts/8292-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body:after {
+    content:
+        url('../img/radio-btn-check.svg')       
+    ;
+    display: none;
+}
+
+.setup_logo {
+	width: 262px;
+	height: 60px;
+	margin-top: 55px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 70px;
+}
+#createAccaunt {
+
+}
+
+.pl0 {
+	padding-left: 0;
+}
+
+.radio-inline-margin .radio-inline +.radio-inline{
+	margin-left: 32px;
+}
+
+#createAccaunt .modal-footer{
+	border-top: 0;
+}
+
+.modal-content_accaunt {
+	padding: 40px 30px 30px 30px !important;
+	border-radius: 8px;
+}
+
+.accaunt-height{
+	min-height: 480px;
+}
+
+#createAccaunt .modal-header {
+	margin: 0;
+}
+
+#createAccaunt .btn-primary:after {
+	content: url("../img/ion-ios-arrow-thin-right---ionicons.svg");
+	padding: 0 0 0 5px;
+}
+
+#createAccaunt .btn-primary,
+#createAccaunt .btn-primary-add {
+	margin: 0;
+}
+
+.btn-primary-add {
+	border-radius: 4px;
+    background-color: #5a86ba;
+    padding: 11px 30px 12px;
+    border-color: #3d6faa;
+    color: #fff;
+}
+
+.btn-primary-add:hover {
+	background-color: #3d6faa;
+    border-color: #3d6faa;
+    color: #fff;
+}
+
+.modal-body {
+	padding: 0;
+}
+#createAccaunt .btn-back,
+#createAccaunt .btn-back-more {
+	margin: 0 10px 0 0;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 0;
+    padding: 11px 30px;
+    border-color: #5a86ba;
+    color: #5a86ba;
+    font-size: 16px;
+}
+
+#createAccaunt .btn-back:before {
+	content: url("../img/ion-ios-arrow-thin-left---ionicons-edit.svg");
+	padding: 0 5px 0 0;
+	display: inline-block;
+	width: 15px;
+}
+
+#createAccaunt .btn-back:hover,
+#createAccaunt .btn-back-more:hover{
+	background-color: rgb(222, 231, 241);
+    color: #5a86ba;
+}
+
+.accaunt-footer {
+	padding: 0;
+	padding-top: 15px;
+	margin: 0;
+	margin-top: -100px;
+}
+#wrap_accaunt {
+	overflow: hidden;
+}
+.modal-accauntBg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 330px;
+	height: 100%;
+	box-shadow: 0 0 24px rgba(30, 52, 80, 0.17);
+	border-radius: 0 8px 8px 0;
+}
+#wrap_accaunt .modal-header {
+	padding: 0;
+	margin: 0;
+	border-bottom: 0;
+}
+h2.accaunt-title {
+	font-family: 'Cabin', sans-serif;
+	font-size: 24px;
+	line-height: 29px;
+	color: #4c637b;
+	margin: 0 0 26px 0;
+	font-weight: bold;
+}
+.accaunt-left-header {
+	width: 235px;
+	height: 30px;
+	margin: 0 0 20px 0;
+}
+.accaunt-subtitle-left {
+	font-size: 14px;
+	font-family: 'Cabin', sans-serif;
+	line-height: 18px;
+	margin-bottom: 17px;
+	font-weight: 600;
+	color: #4c637b;
+	margin-top: 0;
+}
+
+#createAccaunt input[type="text"],
+#createAccaunt input[type="password"],
+#createAccaunt input[type="tel"],
+#createAccaunt select {
+	/*width: 405px;*/
+	width: 85%;
+	height: 45px;
+	border-radius: 4px;
+	background-color: #ffffff;
+	color: #1e3550;
+}
+
+#createAccaunt label, 
+#createAccaunt .form-group h4,
+.accaunt-title_sub {
+	color: #4c637b;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 19px;
+}
+
+#createAccaunt .form-control {
+	border: 1px solid #9eadbc !important;
+}
+
+#createAccaunt .form-group {
+	margin-bottom: 20px;
+}
+
+.accaunt-text-simple {
+	font-size: 14px;
+	font-family: 'Cabin', sans-serif;
+	line-height: 24px;
+	margin-bottom: 10px;
+	font-weight: 400;
+	color: #4c637b;
+}
+.accaunt-text-questions {
+	font-size: 14px;
+	font-family: 'Cabin', sans-serif;
+	line-height: 19px;
+	font-weight: 400;
+	color: #5a86ba;
+	text-align: left;
+	margin: 0;
+	margin-top: 27px;
+}
+
+.accaunt-skip {
+	width: 30px;
+	height: 19px;
+	color: #9eadbc;
+	font-family: 'Cabin', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 19px;
+	margin-top: 25px;
+	margin-right: 18px;
+	float: right;
+}
+/* PROGRESS BAR */
+.accaunt-progressBar {
+	width: 235px;
+	height: 6px;
+	border-radius: 6px;
+	background-color: #eaeaec;
+	overflow: hidden;
+	position: relative;
+}
+
+.accaunt-progressBar-content {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 6px;
+	background: linear-gradient(to left, #10ce76, #35c0c1);
+}
+
+.accaunt-progressBar-content-10 {
+	width: 10%;
+}
+.accaunt-progressBar-content-20 {
+	width: 20%;
+}
+
+.accaunt-progressBar-content-30 {
+	width: 30%;
+}
+
+.accaunt-progressBar-content-40 {
+	width: 40%;
+}
+
+.accaunt-progressBar-content-50 {
+	width: 50%;
+}
+
+.accaunt-progressBar-content-75 {
+	width: 75%;
+}
+
+.accaunt-progressBar-content-85 {
+	width: 85%;
+} 
+.accaunt-progressBar-content-95 {
+	width: 95%;
+} 
+
+.progress-bar-procents{
+	width: 29px;
+	color: #4c637b;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 19px;
+	position: relative;
+	margin-left: -15px;
+}
+
+.progress-bar-procents-10 {
+	left: 10%;
+}
+
+.progress-bar-procents-20 {
+	left: 20%;
+}
+
+.progress-bar-procents-30 {
+	left: 30%;
+}
+
+.progress-bar-procents-40 {
+	left: 40%;
+}
+
+.progress-bar-procents-50 {
+	left: 50%;
+}
+
+.progress-bar-procents-75 {
+	left: 75%;
+}
+
+.progress-bar-procents-85 {
+	left: 85%;
+}
+
+.progress-bar-procents-95 {
+	left: 95%;
+}
+
+#wrap_accaunt .radio-inline {
+	padding-left: 0;
+}
+
+#wrap_accaunt label input + span {
+	display: inline-block;
+	background: url("../img/rediobox_empty.svg") 0 2px no-repeat;
+	background-size: 16px;
+	padding-left: 28px;
+	min-height: 16px;
+}
+#wrap_accaunt label input:checked + span {
+	background: url("../img/radio-btn-check.svg") 0 2px no-repeat;
+	background-size: 16px;
+}
+
+/* CREATE MY ACCOUNT BLOCK*/
+#subdomain {
+	padding-right: 160px;
+	background: url('../img/subdoment.svg') 93% 47% no-repeat;
+	background-size: 136px;
+}
+#accaount-pass {
+	padding-right: 120px;
+}
+.showpass-wrap {
+	position: relative;
+}
+.btn-showpass{
+/*	float: right;
+	margin-top: -45px;
+	margin-right: 80px;*/
+	position: absolute;
+	right: 20%;
+	top: 35%;
+	width: 112px;
+	height: 45px;
+	border: 0;
+	background: transparent url('../img/show_password.svg') center center no-repeat;
+	background-size: 100px;
+	cursor: pointer;
+	z-index: 10;
+}
+.btn-calendar {
+	width: 20px;
+	height: 20px;
+	background: transparent url('../img/cal.svg') center center no-repeat;
+	position: absolute;
+	top: 12px;
+	right: 7px;
+	z-index: 3;
+}
+
+/* THANK YOU BLOCK */
+.accaunt-title_tankyou {
+	font-family: 'Cabin', sans-serif;
+	font-size: 36px;
+	line-height: 44px;
+	text-align: center;
+	font-weight: bold;
+	color: #1e3550;
+	margin: 0;
+	padding: 0;
+}
+
+.accaunt-text_tankyou {
+	font-size: 24px;
+	line-height: 29px;
+	color: #1e3550;
+	text-align: center;
+}
+
+.accaunt-clock-wrap {
+	width: 150px;
+	height: 150px;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* CREATE YOUR COMPANY PROFILE BLOCK */
+#subdomain input[type="radio"] {
+	width: 16px;
+	height: 16px;
+}
+
+/* ADD EMPLOYEES BLOCK */
+.radio-accauntWpap {
+	padding-top: 5px;
+}
+
+#createAccaunt input.accaunt-addEmplo + label{
+	/*width: 405px;*/
+	width: 85%;
+	height: 45px;
+	display: block;
+	margin-top: 7px;
+	padding-top: 11px;
+	border-radius: 4px;
+	background: #fafbfc;
+	border: 2px solid #fafbfc;
+	color: #9eadbc;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 19px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#createAccaunt input[type="radio"]:checked.accaunt-addEmplo + label{
+	border: 2px solid #37bdbd;
+	color: #1e3550;
+	background: #fafbfc url('../img/ion-android-done---ionicons.svg') 95% 50% no-repeat;
+}
+
+.accaunt-box-one,
+.accaunt-box-two,
+.accaunt-box-three {
+	width: 85%;
+	/*width: 405px;*/
+	border-radius: 4px;
+	background: #fafbfc;
+	padding: 15px 10px 10px 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	border: 2px solid #fafbfc;
+}
+
+.accaunt-box-three {
+	border: 2px solid #37bdbd;
+}
+
+.accaunt-box-inertext_b,
+.accaunt-box-inertext,
+.accaunt-csv-text {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	line-height: 19px;
+	margin-bottom: 10px;
+}
+
+.accaunt-box-inertext_b {
+	font-weight: 600;
+	color: #1e3550;
+}
+
+.accaunt-box-inertext {
+	color: #4c637b;
+	font-weight: 400;
+}
+
+.accaunt-popinters {
+	width: 110px;
+	height: 23px;
+	margin: 0 auto;
+}
+
+.accaunt-popinters .form-group{
+	width: 23px;
+	height: 23px;
+	float: left;
+	margin-bottom: 0!important;
+
+}
+
+#addEmployees input[type="text"].codeOne {
+	width: 21px;
+	height: 21px;
+	border-radius: 0px;
+	border: none !important;
+	padding: 0;
+	border-bottom: 2px solid #9eadbc !important;
+	background: #fafbfc;
+	background-size: 10px 11px;
+	text-align: center;
+}
+
+input[type="text"].codeOne::-webkit-input-placeholder{
+	color: #9eadbc;
+	font-size: 22px;
+}
+
+input[type="text"].codeOne::-moz-placeholder {
+	color: #9eadbc;
+	font-size: 22px;
+}
+input[type="text"].codeOne:-ms-input-placeholder {
+	color: #9eadbc;
+	font-size: 22px;
+}
+
+input[type="text"].codeOne:-moz-placeholder {
+	color: #9eadbc;
+	font-size: 22px;
+}
+.accaunt-popinters-items {
+	width: 20px;
+	height: 18px;
+	border-bottom: 2px solid #9eadbc;
+	float: left;
+	margin-right: 8px;
+	background: url('../img/poiner-art.svg') center 0 no-repeat;
+	background-size: 10px 11px;
+}
+
+.accaunt-popinters-items:nth-child(4){
+	margin-right: 0;
+}
+
+input[type="file"].accaunt-upload{
+	width: 48px;
+	height: 41px;
+	opacity:0;
+	border: none;
+}
+
+.accaunt-icon-cloud {
+	width: 48px;
+	height: 41px;
+	margin: 0 auto;
+	background: url('../img/icon-cloud.svg') 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.accaunt-csv-text {
+	margin-top: 8px;
+	font-weight: 600;
+	color: #4c637b;
+}
+
+.btn-download {
+	width: 192px;
+	height: 45px;
+	border-radius: 4px;
+	padding: 11px 12px 6px 40px;
+	border: 1px solid #5a86ba;
+	color: #5a86ba;
+	font-family: 'Cabin', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 19px;
+	background: #fafbfc url('../img/icon-download.svg') 10% 50% no-repeat;
+}
+
+.btn-download:hover {
+	background: #dee7f1 url('../img/icon-download.svg')  10% 50% no-repeat;
+    color: #5a86ba;
+}
+
+.accaunt-iconNote {
+	width: 42px;
+	height: 42px;
+	margin: 0 auto;
+	background: url('../img/icon-notes.svg') 0 0 no-repeat;
+	margin-bottom: 10px;
+}
+
+/* MANUALLY ADD EMPLOYEES BLOCK */
+#reg_manually_add_employees .radio-inline {
+	margin-top: 6px;
+}
+
+.plr0 {
+	padding-left: 0;
+	padding-right: 15px;
+}
+
+#createAccaunt input[type="email"].form-edit,
+#createAccaunt input[type="text"].form-edit {
+	width: 100% !important;	
+}
+
+#mannually p{
+    color: #4c637b;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+}
+/* PAYROLL AND OVERTIME BLOCK*/
+input[type="text"].accaunt-data {
+	width: 220px !important;
+	border-right: 1px solid #fff !important;
+}
+#createAccaunt .form-group-edit {
+	width: 210px !important;
+	border: 0 !important;
+} 
+
+/*  */
+#createAccaunt label.radio-inline{
+	font-weight: 400;
+}
+#createAccaunt label.radio-inline b{
+	font-weight: 600;
+}
+#clockpoint_restrictions .accaunt-box-inertext{
+	width: 405px;
+}
+#clockpoint_restrictions_location .radio-inline+.radio-inline, #clockpoint_restrictions_ip .radio-inline+.radio-inline{
+	margin-left: 32px;
+}
+#clockpoint_restrictions_location_input, #push_notifications_phone{
+	margin-left: 15px;
+}
+#clockpoint_restrictions_location{
+	margin-top: 10px;
+}
+#push_notifications .form-group p, #clockpoint_restrictions .form-group p{
+ color: #4c637b;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    max-width: 405px;
+}
+#push_notifications .form-group p.bold, #clockpoint_restrictions .form-group p{
+    font-weight: 600;
+}
+#reg_congratulation{
+ 	text-align: center;
+ 
+}
+#reg_congratulation h2{
+	margin-top: 44px;
+	color: #1e3550;
+	font-size: 36px;
+	font-weight: 700;
+	font-family: 'lucida_grandebold';
+}
+#reg_congratulation h3{
+	margin-top: 50px;
+	color: #1e3550;
+	font-weight: 400;
+	font-size: 24px;
+	font-family: 'Cabin', sans-serif;
+}
+#line_congratulation_wrap{
+	width: 405px;
+	height: 14px;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+#line_congratulation {
+	width: 405px;
+	height: 14px;
+	border-radius: 8px;
+	background: linear-gradient(to left, #10ce76, #35c0c1);
+}
+#line_congratulation_bg{
+	width: 41px;
+	height: 22px;
+	background: url(../img/stars.svg);
+	position: absolute;
+	right: -29px;
+	bottom: 100%;
+}
+#reg_congratulation p{
+	margin-top: 35px;
+	color: #1e3550;
+	font-size: 16px;
+	font-family: 'Cabin', sans-serif;
+}
+#reg_congratulation_link{
+	margin-top: 120px;
+	text-align: center;
+}
+#reg_congratulation_link a{
+	color: #5e89bc;
+	text-decoration: underline;
+	font-size: 16px;
+	font-family: 'Cabin', sans-serif;
+}
+#reg_congratulation_link a:hover{
+ 	text-decoration: none;
+}
+
+
+@media (max-width: 991px){
+	.modal-accauntBg {
+		display: none;
+	}
+
+	.plr0 {
+		padding-left: 15px;
+	}
+}
+
+@media (max-width: 768px){
+	#createAccaunt input[type="text"],
+	#createAccaunt input[type="password"],
+	#createAccaunt input[type="tel"],
+	#createAccaunt select {
+		width: 100%;
+		height: 50px;
+	}
+
+	#createAccaunt input[type="email"].form-edit,
+	#createAccaunt input[type="text"].form-edit {
+		width: 100% !important;	
+		height: 50px;
+	}
+
+	::-webkit-input-placeholder { 
+  		font-size: 18px;		
+	}
+	::-moz-placeholder { 
+  		font-size: 18px;		
+	}
+	:-ms-input-placeholder { 
+  		font-size: 18px;		
+	}
+	:-moz-placeholder {
+  		font-size: 18px;		
+	}
+
+	.accaunt-height {
+		height: 80%;
+	}
+
+	.accaunt-subtitle-left {
+		font-size: 16px;
+    	line-height: 20px;
+    	margin-bottom: 17px;
+	}
+
+	.accaunt-text-simple {
+		font-size: 14px;
+    	line-height: 20px;
+    	margin-bottom: 17px;		
+	}
+
+	.accaunt-text-questions {
+		font-size: 14px;
+		line-height: 20px;
+		margin-left: -15px;
+	}
+
+	#createAccaunt label, #createAccaunt .form-group h4, .accaunt-title_sub {
+    	font-size: 14px;
+    	margin-bottom: 10px;
+	}
+
+	#wrap_accaunt label input + span {
+    	display: inline-block;
+    	background: url(../img/rediobox_empty.svg) 0 2px no-repeat;
+    	background-size: 20px;
+    	padding-left: 28px;
+    	height: 22px;
+	}
+
+	#wrap_accaunt label input:checked + span {
+    	background: url(../img/radio-btn-check.svg) 0 2px no-repeat;
+    	background-size: 20px;
+    	height: 22px;
+	}
+
+	#subdomain {
+    	padding-right: 20%;
+    	background: url(../img/subdoment.svg) 95% 43% no-repeat;
+    	background-size: 110px;
+	}
+
+	#accaount-pass{
+		padding-right: 20%;
+	}
+	.btn-showpass {
+		position: absolute;
+		right: 15%;
+		top: 35%;
+/*		float: right;
+    	margin-right: 5%;*/
+    	width: 80px;
+    	height: 45px;
+    	border: 0;
+    	background: transparent url(../img/show_password.svg) center center no-repeat;
+    	background-size: 80px;
+	}
+
+	#createAccaunt .btn-primary, #createAccaunt .btn-primary-add {
+		font-size: 16px;
+	}
+
+	#createAccaunt .btn-primary:after {
+		content: url("../img/ion-ios-arrow-thin-right---ionicons.svg");
+		padding: 0 0 0 5px;
+	}
+
+	#createAccaunt .btn-back:before {
+		content: url("../img/ion-ios-arrow-thin-left---ionicons-edit.svg");
+		padding: 0 5px 0 0;
+		display: inline-block;
+		width: 15px;
+	}
+
+	.accaunt-skip {
+		font-size: 16px;
+		margin-top: 10px;
+		float: right;
+	}
+
+	.accaunt-left-header {
+		width: 100%;
+	}
+
+	.accaunt-progressBar {
+		width: 100%;
+	}
+
+	.progress-bar-procents {
+		font-size: 16px;
+		margin-top: 10px;
+	}
+
+	#createAccaunt input.accaunt-addEmplo + label {
+		width: 100%;
+    	height: 55px;
+    	display: block;
+    	margin-top: 30px;
+    	padding-top: 12px;
+    	font-size: 16px;
+    	font-weight: 600;
+    	line-height: 24px;
+	}
+
+	.accaunt-box-one, .accaunt-box-two, .accaunt-box-three {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.accaunt-box-inertext_b, .accaunt-box-inertext, .accaunt-csv-text {
+    	font-size: 16px;
+    	line-height: 30px;
+    	margin-bottom: 10px;
+	}
+
+	#mannually p {
+		font-size: 16px;
+		margin-top: 10px;
+	}
+
+	#createAccaunt .form-control {
+		font-size: 16px;
+	}
+
+	.btn-calendar {
+		width: 25px;
+		height: 25px;
+		top: 25%;
+	}
+
+	#reg_congratulation h2 {
+		font-size: 24px;
+	}
+
+	#line_congratulation_wrap{
+		width: 100%;
+			}
+	#line_congratulation {
+		width: 100%;
+	}
+
+	#line_congratulation_bg {
+		display: none;
+	}
+}
+@media (max-width: 546px){
+	
+	#createAccaunt .btn-primary-add {
+		display: block;
+		margin-top: 10px;
+	}
+}
+@media (max-width: 457px){ 
+	#clockpoint_restrictions_ip .radio-inline + .radio-inline {
+		margin-left: 0!important;
+	}
+}
+@media (max-width: 386px){
+	#createAccaunt .btn-back-more{
+		display: block;
+		margin-top: 10px;		
+	}
+}
+@media (max-width: 325px){
+	#createAccaunt .btn-back{
+		margin-bottom: 15px;
+	}
+}
+
+
+
+

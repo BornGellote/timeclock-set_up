@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>set up edit</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,600,700|Open+Sans:400,600" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/accaunt.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  	</head>
+  	<body class="signup modal-open">
+	<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createAccaunt">Create accaunt</button> -->
+	
+	<div id="createAccaunt" class="modal fade in" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="createBigac" style="display: block; " >
+		
+		<div class="setup_logo">
+			<img src="img/logo_wizard.png" alt="wizard">
+		</div>
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div id="wrap_accaunt" class="modal-content modal-content_accaunt">
+		    	<div class="accauntBox">
+			    	<div class="modal-accauntBg">
+			    	</div>
+		    		<div class="modal-body accaunt-height">
+		    			<div class="row">
+		    				<div class="col-xs-12 col-sm-12 col-md-8 accaunt-right-col">
+		    					<h2 class="accaunt-title">Create My Account</h2>
+		    					<form action="#">
+		    						<div class="form-group">
+    									<label for="subdomain">Create subdomain ( min 5 characters )</label>
+    										<input type="text" class="form-control" id="subdomain" placeholder="">
+  									</div>
+		    						<div class="form-group">
+    									<label for="accaount-user">Username</label>
+    										<input type="text" class="form-control" id="accaount-user" placeholder="Username">
+  									</div>
+		    						<div class="form-group showpass-wrap">
+    									<label for="accaount-pass">Create password</label>
+    										<input type="password" class="form-control" id="accaount-pass">
+    										<button class="btn-showpass"></button>
+  									</div>
+		    						<div class="form-group">
+    									<label for="subdomain">Your full name</label>
+    										<input type="text" class="form-control" id="accaount-fullname" placeholder="Full name">
+  									</div>  									  									 
+		    				</div>
+		    				<div class="col-xs-12 col-sm-12 col-md-4 accaunt-left-col">
+		    					<div class="accaunt-left-header">
+									<div class="accaunt-progressBar">
+										<div class="accaunt-progressBar-content accaunt-progressBar-content-10"></div>
+									</div>
+									<div class="progress-bar-procents progress-bar-procents-10">10%</div>
+		    					</div>
+		    					<h4 class="accaunt-subtitle-left">
+		    						Create my account
+		    					</h4>
+		    					<p class="accaunt-text-simple">
+		    						Create a subdomain. This will be your company's log in page. Shorter is better. Min of 5 characters. No symbols or spaces.
+		    					</p>
+		    				</div>
+		    			</div>
+		    		</div>
+		    		<div class="modal-footer">
+		    			<div class="row">
+		    				<div class="col-xs-12 col-sm-12 col-md-8 pl0">
+		    					<a href="#" class="nextEl btn btn-primary pull-left">Next</a>
+					    	</div>
+					    	<div class="col-xs-12 col-sm-12 col-md-4">
+								<p class="accaunt-text-questions">Have Questions? (866) 208-7618</p>
+					    	</div>
+					    </div>
+		    		</div>
+		    	</div>
+
+		    	<div class="accauntBox radio-inline-margin">
+					<div class="modal-accauntBg">
+					</div>
+		    		<div class="modal-body accaunt-height">
+		    			<div class="row">
+		    				<div class="col-xs-12 col-sm-12 col-md-8">
+		    					<h2 class="accaunt-title">Create Your Company Profile</h2>
+		    						<div class="form-group">
+    									<label for="accaount-company">Company Name</label>
+    										<input type="text" class="form-control" id="accaount-company" placeholder="Company Name">
+  									</div>
+		    						<div class="form-group">
+    									<label for="accaount-companyphone">Company Phone</label>
+    										<input type="tel" class="form-control" id="accaount-companyphone" placeholder="Company Phone">
+  									</div>
+
+  									<div class="form-group">
+    									<label>Timezone</label>
+    										<select class="form-control">
+  												<option>(GMT -06:00) Central Time (US and Canada)</option>
+  												<option>(GMT -02:00) Central Time (Europe)</option>
+  												<option>(GMT +01:00) Central Time (Asia)</option>
+  												<option>(GMT +02:00) Central Time (China)</option>
+  												<option>(GMT +05:00) Central Time (Avstralia)</option>
+											</select>
+  									</div>
+  									<div class="form-group">
+  										<h4>Do all your employees work in the same time zone?</h4>
+  										<label class="radio-inline">
+  											<input type="radio" name="inlineRadioOptions" id="iRadio1" value="option1"> 
+  											<span>Yes</span>
+  										</label>
+										<label class="radio-inline">
+										  	<input type="radio" name="inlineRadioOptions" id="iRadio2" value="option2"> 
+											<span>No</span>
+										</label>
+  									</div>
+		    				</div>
+		    				<div class="col-xs-12 col-sm-12 col-md-4">
+		    					<div class="accaunt-left-header">
+									<div class="accaunt-progressBar">
+										<div class="accaunt-progressBar-content accaunt-progressBar-content-20"></div>
+									</div>
+									<div class="progress-bar-procents progress-bar-procents-20">20%</div>
+
+		    					</div>
+		    					<h4 class="accaunt-subtitle-left">
+		    						You're almost done! You're set up is 20% complete!
+		    					</h4>
+		    				</div>
+		    			</div>
+		    		</div>
+		    		<div class="modal-footer">
+		    			<div class="row">
+		    				<div class="col-xs-12 col-sm-12 col-md-8 pl0">
+		    					<a href="#" class="prevEl btn btn-back pull-left">Back</a>
+		    					<a href="#" class="nextEl btn btn-primary pull-left">Next</a>
+		    					<a href="#" class="accaunt-skip">Skip</a>
+					    	</div>
+					    	<div class="col-xs-12 col-sm-12 col-md-4">
+								<p class="accaunt-text-questions">Have Questions? (866) 208-7618</p>
+					    	</div>
+					    </div>
+		    		</div>
+		    	</div>
+
+		    	<div class="accauntBox">
+		    		<div class="modal-accauntBg">
+					</div>
+		    		<div class="modal-body accaunt-height">
+		    			<div class="row">
+		    				<div class="col-xs-12 col-sm-12 col-md-8">
+		    					<h2 class="accaunt-title">Add Employees</h2>
+		    					<h4 class="accaunt-title_sub">How many employees do you currently have?</h4>
+		    					<div class="radio-accauntWpap">
+			    					<div class="radio radio-accauntEmploee">
+									    <input type="radio" class="accaunt-addEmplo" name="addImploee" id="addImploee1" value="addEmp1" checked>
+									  <label for="addImploee1">
+									    <span>1-10 employees</span>
+									  </label>
+									</div>
+									<div class="radio radio-accauntEmploee">
+										<input type="radio" class="accaunt-addEmplo" name="addImploee" id="addImploee2" value="addEmp2">
+										<label for="addImploee2">
+											<span>11-20 employees</span>
+										</label>
+									</div>
+									<div class="radio radio-accauntEmploee">
+										<input type="radio" class="accaunt-addEmplo" name="addImploee" id="addImploee3" value="addEmp3">
+										<label for="addImploee3">
+												<span>21-30 employees</span>
+										</label>
+									</div>
+									<div class="radio radio-accauntEmploee">
+											<input type="radio" class="accaunt-addEmplo" name="addImploee" id="addImploee4" value="addEmp4" >
+										<label for="addImploee4">
+											<span>31-50 employees</span>
+										</label>
+									</div>
+									<div class="radio radio-accauntEmploee">
+										<input type="radio" class="accaunt-addEmplo" name="addImploee" id="addImploee5" value="addEmp5">
+										<label for="addImploee5">
+												<span>50+ employees</span>
+										</label>
+									</div>
+								</div>							
+		    				</div>
+		    				<div class="col-xs-12 col-sm-12 col-md-4">
+		    					<div class="accaunt-left-header">
+									<div class="accaunt-progressBar">
+										<div class="accaunt-progressBar-content accaunt-progressBar-content-30"></div>
+									</div>
+									<div class="progress-bar-procents progress-bar-procents-30">30%</div>
+
+		    					</div>
+		    					<h4 class="accaunt-subtitle-left">
+		    						You're almost done! You're set up is 30% complete!
+		    					</h4>
+		    					<p class="accaunt-text-simple">
+		    						Let's start by entering your team size and adding just a few employees!
+		    					</p>
+		    				</div>
+		    			</div>
+		    		</div>
+		    		<div class="modal-footer">
+		    			<div class="row">
+		    				<div class="col-xs-12 col-sm-12 col-md-8 pl0">
+		    					<a href="#" class="prevEl btn btn-back pull-left">Back</a>
+		    					<a href="#" class="nextEl btn btn-primary pull-left">Next</a>
+		    					<a href="#" class="accaunt-skip">Skip</a>
+					    	</div>
+					    	<div class="col-xs-12 col-sm-12 col-md-4">
+								<p class="accaunt-text-questions">Have Questions? (866) 208-7618</p>
+					    	</div>
+					    </div>
+		    		</div>
+		    	</div>
+
+		    	<div class="accauntBox" id="addEmployees">
+		    		<div class="modal-accauntBg">
+					</div>
+		    		<div class="modal-body accaunt-height">
+		    			<div class="row">
+		    				<div class="col-xs-12 col-sm-12 col-md-8">
+		    					<h2 class="accaunt-title">Add Employees</h2>
+		    					<div class="accaunt-box-one">
+		    						<div class="accaunt-popinters">
+		    							<div class="form-group">
+    										<label class="sr-only" for="codeOne"></label>
+    										<input type="text"  maxlength="1"  class="form-control codeOne" id="codeOne" placeholder="*">
+  										</div>
+  										<div class="form-group">
+    										<label class="sr-only" for="codeTwo"></label>
+    										<input type="text"  maxlength="1" class="form-control codeOne" id="codeTwo" placeholder="*">
+  										</div>
+  										<div class="form-group">
+    										<label class="sr-only" for="codeThree"></label>
+    										<input type="text"  maxlength="1" class="form-control codeOne" id="codeThree" placeholder="*">
+  										</div>
+  										<div class="form-group">
+    										<label class="sr-only" for="codeFour"></label>
+    										<input type="text"  maxlength="1" class="form-control codeOne" id="codeFour" placeholder="*">
+  										</div>
+		    						</div>
+		    						<h4 class="accaunt-box-inertext_b">I would like my employees to self-register.</h4>
+		    						<p class="accaunt-box-inertext">Create a unique 4-digit pin to give to your employees so they can self-register</p>
+		    					</div>
+		    					<div class="accaunt-box-two">
+		    						<div class="accaunt-icon-cloud">
+		    							<input type="file" size="1" class="accaunt-upload">
+		    						</div>
+		    						<p class="accaunt-csv-text">
+		    							Upload CSV/Excel File
+		    						</p>
+
+		    						<a href="" class="btn btn-download" download>
+		    							Download sample
+		    						</a>
+		    					</div>
+		    					<div class="accaunt-box-three">
+		    						<div class="accaunt-iconNote">
+		    						</div>
+
+		    						<p class="accaunt-box-inertext">
+		    							Manually enter or copy and paste employees <br> First, Last and Email
+		    						</p>
+		    						
+		    					</div>
+		    				</div>
+		    				<div class="col-xs-12 col-sm-12 col-md-4">
+		    					<div class="accaunt-left-header">
+									<div class="accaunt-progressBar">
+										<div class="accaunt-progressBar-content accaunt-progressBar-content-40"></div>
+									</div>
+									<div class="progress-bar-procents progress-bar-procents-40">40%</div>
+		    					</div>
+		    					<h4 class="accaunt-subtitle-left">
+		    						You're almost done! You're set up is 40% complete!
+		    					</h4>
+		    					<p class="accaunt-text-simple">
+		    						Select how you would like to add your employees
+		    					</p>
+		    					
+		    				</div>
+		    			</div>
+		    		</div>
+		    		<div class="modal-footer">
+		    			<div class="row">
+		    				<div class="col-xs-12 col-sm-12 col-md-8 pl0">
+		    					<a href="#" class="prevEl btn btn-back pull-left">Back</a>
+		    					<a href="#" class="nextEl btn btn-primary pull-left">Next</a>
+		    					<a href="#" class="accaunt-skip">Skip</a>
+					    	</div>
+					    	<div class="col-xs-12 col-sm-12 col-md-4">
+								<p class="accaunt-text-questions">Have Questions? (866) 208-7618</p>
+					    	</div>
+					    </div>
+		    		</div>
+		    	</div>
+
+		    	<div id="reg_manually_add_employees" class="accauntBox">
+		    		<div class="modal-body accaunt-height">
+		    			<div class="row">
+		    				<div class="col-xs-12">
+		    					<h2 class="accaunt-title">Manually Add Employees</h2>
+		    					<div class="row">
+		    						<div class="col-sm-12 col-md-4">
+		    							<div class="form-group">
+    										<label for="accaount-manEmail">Email</label>
+    										<input type="email" class="form-control form-edit" id="accaount-manEmail" placeholder="">
+  										</div>
+		    						</div>
+		    						<div class="col-sm-12 col-md-2 plr0">
+		    							<div class="form-group">
+    										<label for="accaount-manname">First name</label>
+    										<input type="text" class="form-control form-edit" id="accaount-manname" placeholder="">
+  										</div>		    						
+		    						</div>
+		    						<div class="col-sm-12 col-md-2 plr0">
+		    							<div class="form-group">
+    										<label for="accaount-manlname">Last name</label>
+    										<input type="text" class="form-control form-edit" placeholder="">
+  										</div>			    						
+		    						</div>
+		    						<div class="col-sm-12  col-md-3">
+			    						<div id="mannually" class="form-group">
+	  										<p>Wages</p>
+	  										<label class="radio-inline">
+	  											<input type="radio" name="inlineRadioOptions" value="option11"> <span>Hourly</span>
+	  										</label>
+											<label class="radio-inline">
+											  	<input type="radio" name="inlineRadioOptions" value="option12"> <span>Salary</span>
+											</label>
+	  									</div>
+		    						</div>
+		    					</div>
+		    					<div class="row">
+		    						<div class="col-sm-12  col-md-4">
+		    							<div class="form-group">
+    										<label for="accaount-manEmail">Email</label>
+    										<input type="email" class="form-control form-edit" id="accaount-manEmail" placeholder="">
+  										</div>
+		    						</div>
+		    						<div class="col-sm-12  col-md-2 plr0">
+		    							<div class="form-group">
+    										<label for="accaount-manname">First name</label>
+    										<input type="text" class="form-control form-edit" id="accaount-manname" placeholder="">
+  										</div>		    						
+		    						</div>
+		    						<div class="col-sm-12  col-md-2 plr0">
+		    							<div class="form-group">
+    										<label for="accaount-manlname">Last name</label>
+    										<input type="text" class="form-control form-edit" id="" placeholder="">
+  										</div>			    						
+		    						</div>
+		    						<div class="col-sm-12  col-md-3">
+			    						<div id="mannually" class="form-group">
+	  										<p>Wages</p>
+	  										<label class="radio-inline">
+	  											<input type="radio" name="inlineRadioOptions" value="option13"> <span>
+	  											Hourly</span>
+	  										</label>
+											<label class="radio-inline">
+											  	<input type="radio" name="inlineRadioOptions" value="option14"> <span>
+												Salary</span>
+											</label>
+	  									</div>
+		    						</div>
+		    					</div>
+		    					<div class="row">
+		    						<div class="col-sm-12 col-md-4">
+		    							<div class="form-group">
+    										<label for="accaount-manEmail">Email</label>
+    										<input type="email" class="form-control form-edit" id="accaount-manEmail" placeholder="">
+  										</div>
+		    						</div>
+		    						<div class="col-sm-12 col-md-2 plr0">
+		    							<div class="form-group">
+    										<label for="accaount-manname">First name</label>
+    										<input type="text" class="form-control form-edit" id="accaount-manname" placeholder="">
+  										</div>		    						
+		    						</div>
+		    						<div class="col-sm-12 col-md-2 plr0">
+		    							<div class="form-group">
+    										<label for="accaount-manlname">Last name</label>
+    										<input type="text" class="form-control form-edit" id="" placeholder="">
+  										</div>			    						
+		    						</div>
+		    						<div class="col-sm-12 col-md-3 ">
+			    						<div id="mannually" class="form-group">
+	  										<p>Wages</p>
+	  										<label class="radio-inline">
+	  											<input type="radio" name="inlineRadioOptions"  value="option15"> 
+	  											<span>Hourly</span>
+	  										</label>
+											<label class="radio-inline">
+											  	<input type="radio" name="inlineRadioOptions" value="option16"> 
+												<span>Salary</span>
+											</label>
+	  									</div>
+		    						</div>
+		    					</div>
+		    					<div class="row">
+		    						<div class="col-sm-12 col-md-4">
+		    							<div class="form-group">
+    										<label for="accaount-manEmail">Email</label>
+    										<input type="email" class="form-control form-edit" id="accaount-manEmail" placeholder="">
+  										</div>
+		    						</div>
+		    						<div class="col-sm-12 col-md-2 plr0">
+		    							<div class="form-group">
+    										<label for="accaount-manname">First name</label>
+    										<input type="text" class="form-control form-edit" id="accaount-manname" placeholder="">
+  										</div>		    						
+		    						</div>
+		    						<div class="col-sm-12 col-md-2 plr0">
+		    							<div class="form-group">
+    										<label for="accaount-manlname">Last name</label>
+    										<input type="text" class="form-control form-edit" placeholder="">
+  										</div>			    						
+		    						</div>
+		    						<div class="col-sm-12 col-md-3">
+			    						<div id="mannually" class="form-group">
+	  										<p>Wages</p>
+	  										<label class="radio-inline">
+	  											<input type="radio" name="inlineRadioOptions" value="option17"><span>Hourly</span>
+	  										</label>
+											<label class="radio-inline">
+											  	<input type="radio" name="inlineRadioOptions" value="option18"><span>Salary</span>
+											</label>
+	  									</div>
+		    						</div>
+		    					</div>
+		    					<div class="row">
+		    						<div class="col-sm-12 col-md-4">
+		    							<div class="form-group">
+    										<label for="accaount-manEmail">Email</label>
+    										<input type="email" class="form-control form-edit" id="accaount-manEmail" placeholder="">
+  										</div>
+		    						</div>
+		    						<div class="col-sm-12 col-md-2 plr0">
+		    							<div class="form-group">
+    										<label for="accaount-manname">First name</label>
+    										<input type="text" class="form-control form-edit" id="accaount-manname" placeholder="">
+  										</div>		    						
+		    						</div>
+		    						<div class="col-sm-12 col-md-2 plr0">
+		    							<div class="form-group">
+    										<label for="accaount-manlname">Last name</label>
+    										<input type="text" class="form-control form-edit" id="" placeholder="">
+  										</div>			    						
+		    						</div>
+		    						<div class="col-sm-12 col-md-3">
+			    						<div id="mannually" class="form-group">
+	  										<p>Wages</p>
+	  										<label class="radio-inline">
+	  											<input type="radio" name="inlineRadioOptions" value="option19"><span>Hourly</span>
+	  										</label>
+											<label class="radio-inline">
+											  	<input type="radio" name="inlineRadioOptions" value="option20"><span>Salary</span>
+											</label>
+	  									</div>
+		    						</div>
+		    					</div>		    					
+		    				</div>
+		    			</div>
+		    		</div>
+		    		<div class="modal-footer">
+		    			<div class="row">
+		    				<div class="col-xs-12 pl0">
+		    					<a href="#" class="prevEl btn btn-back pull-left">Back</a>
+		    					<a href="#" class="btn btn-back-more pull-left">Add more field</a>
+		    					<a href="#" class="nextEl btn btn-primary-add pull-left">Add employees</a>
+		    					<a href="#" class="accaunt-skip">Skip</a>
+					    	</div>
+					    </div>
+		    		</div>
+		    	</div>
+
+		    	<div class="accauntBox radio-inline-margin">
+		    		<div class="modal-accauntBg">
+					</div>
+		    		<div class="modal-body accaunt-height">
+		    			<div class="row">
+		    				<div class="col-xs-12 col-sm-12 col-md-8">
+		    				<h2 class="accaunt-title">Clock in Settings</h2>
+		    				<p class="accaunt-box-inertext">
+		    					When your employees clock in for work, would you like them to:
+		    				</p>
+			    				<div class="row">
+			    					<div class="col-sm-4">
+				    					<div id="mannually" class="form-group">
+		  									<p>Take a photo? </p>
+		  									<label class="radio-inline">
+		  										<input type="radio" name="inlineRadioOptions"  value="option21"><span>Yes</span>
+		  									</label>
+											<label class="radio-inline">
+											  	<input type="radio" name="inlineRadioOptions" value="option22"><span>No</span>
+											</label>
+		  								</div>
+			    					</div>
+			    				</div>
+			    				<div class="row">
+			    					<div class="col-sm-4">
+				    					<div id="mannually" class="form-group">
+		  									<p>Take a photo? </p>
+		  									<label class="radio-inline">
+		  										<input type="radio" name="inlineRadioOptions"  value="option23"><span>Yes</span>
+		  									</label>
+											<label class="radio-inline">
+											  	<input type="radio" name="inlineRadioOptions" value="option24"><span>No</span>
+											</label>
+		  								</div>
+			    					</div>
+			    				</div>
+			    				<div class="row">
+			    					<div class="col-sm-4">
+				    					<div id="mannually" class="form-group">
+		  									<p>Take a photo? </p>
+		  									<label class="radio-inline">
+		  										<input type="radio" name="inlineRadioOptions" value="option25"><span>Yes</span>
+		  									</label>
+											<label class="radio-inline">
+											  	<input type="radio" name="inlineRadioOptions" value="option26"><span>No</span>
+											</label>
+		  								</div>
+			    					</div>
+			    				</div>
+			    				<div class="row">
+			    					<div class="col-sm-4">
+				    					<div id="mannually" class="form-group">
+		  									<p>Take a photo? </p>
+		  									<label class="radio-inline">
+		  										<input type="radio" name="inlineRadioOptions" value="option27"><span>Yes</span>
+		  									</label>
+											<label class="radio-inline">
+											  	<input type="radio" name="inlineRadioOptions" value="option28"><span>No</span>	
+											</label>
+		  								</div>
+			    					</div>
+			    				</div>
+			    				<div class="row">
+			    					<div class="col-sm-4">
+				    					<div id="mannually" class="form-group">
+		  									<p>Take a photo? </p>
+		  									<label class="radio-inline">
+		  										<input type="radio" name="inlineRadioOptions" id="iRadio29" value="option29"><span>Yes</span>
+		  									</label>
+											<label class="radio-inline">
+											  	<input type="radio" name="inlineRadioOptions" id="iRadio30" value="option30"><span>No</span>
+											</label>
+		  								</div>
+			    					</div>
+			    				</div>
+		    				</div>
+		    				<div class="col-xs-12 col-sm-12 col-md-4">
+			    				<div class="accaunt-left-header">
+
+									<div class="accaunt-progressBar">
+										<div class="accaunt-progressBar-content accaunt-progressBar-content-50"></div>
+									</div>
+									<div class="progress-bar-procents progress-bar-procents-50">50%</div>		    				
+			    				</div>
+			    				<h4 class="accaunt-subtitle-left">
+			    					You're almost done! You're set up is 50% complete!
+			    				</h4>
+			    				<p class="accaunt-text-simple">
+			    					You can request helpful information when your employees clock in or out! 
+			    				</p>
+		    				</div>
+		    			</div>
+		    		</div>
+		    		<div class="modal-footer">
+		    			<div class="row">
+		    				<div class="col-xs-12 col-sm-12 col-md-8 pl0">
+		    					<a href="#" class="prevEl btn btn-back pull-left">Back</a>
+		    					<a href="#" class="nextEl btn btn-primary pull-left">Next</a>
+		    					<a href="#" class="accaunt-skip">Skip</a>
+					    	</div>
+					    	<div class="col-xs-12 col-sm-12 col-md-4">
+								<p class="accaunt-text-questions">Have Questions? (866) 208-7618</p>
+					    	</div>
+					    </div>		    		
+		    		</div>
+		    	</div>
+
+		    	<div class="accauntBox">
+		    		<div class="modal-accauntBg">
+					</div>
+		    		<div class="modal-body accaunt-height">
+		    			<div class="row">
+		    				<div class="col-xs-12 col-sm-12 col-md-8">
+		    				<h2 class="accaunt-title">Payroll and Overtime</h2>
+		    					<div class="row">
+
+		    					<div class="col-sm-12">
+		    					<div class="form-group">
+    								<label>What day of the week does your payroll start?</label>
+    									<select class="form-control">
+  											<option>Monday</option>
+  											<option>Thuesday</option>
+  											<option>Wednesday</option>
+  											<option>Thursday</option>
+  											<option>Friday</option>
+										</select>
+  								</div>
+
+  								<div class="form-group">
+    								<label>How often do you generate payroll?</label>
+    									<select class="form-control">
+  											<option>Monthly</option>
+  											<option>January</option>
+  											<option>February</option>
+  											<option>March</option>
+  											<option>April</option>
+										</select>
+  								</div>
+									
+	  							<div id="accaunt-data" class="form-group">
+			                        <div class="title">
+			                            <h3>Due date</h3>
+			                        </div>
+			                        <div class="form-group form-group-edit">
+				                        	<div class="input-group date" id="accaunt-data">
+				                            	<input type="text"  class="form-control accaunt-data" placeholder="12/26/2016"> 
+				                            		<button class="btn btn-calendar">
+				                            	</button>
+				                            </div>
+			                          </div>
+	  							</div>
+
+  								<div class="form-group">
+    								<label>Does your company offer overtime?</label>
+    									<select class="form-control">
+  											<option>My company offers both daily and weekly overtime</option>
+  											<option>My company offers </option>
+  											<option>My company offers </option>
+  											<option>My company offers </option>
+  											<option>My company offers </option>
+										</select>
+  								</div>
+								</div>
+  								</div>
+		    				</div>
+		    				<div class="col-xs-12 col-sm-12 col-md-4">
+			    				<div class="accaunt-left-header">
+
+									<div class="accaunt-progressBar">
+										<div class="accaunt-progressBar-content accaunt-progressBar-content-75"></div>
+									</div>
+									<div class="progress-bar-procents progress-bar-procents-75">75%</div>
+
+			    				</div>
+			    				<h4 class="accaunt-subtitle-left">
+			    					You're almost done! You're set up is 75% complete!
+			    				</h4>
+			    				<p class="accaunt-text-simple">
+			    					In order for us to give you accurate reports, tell us a little bit about your payroll structure
+			    				</p>
+		    				</div>
+		    			</div>
+		    		</div>
+		    		<div class="modal-footer">
+		    			<div class="row">
+		    				<div class="col-xs-12 col-sm-12 col-md-8 pl0">
+		    					<a href="#" class="prevEl btn btn-back pull-left">Back</a>
+		    					<a href="#" class="nextEl btn btn-primary pull-left">Next</a>
+		    					<a href="#" class="accaunt-skip">Skip</a>
+					    	</div>
+					    	<div class="col-xs-12 col-sm-12 col-md-4">
+								<p class="accaunt-text-questions">Have Questions? (866) 208-7618</p>
+					    	</div>
+					    </div>	
+		    		</div>
+		    	</div>
+
+		    	
+				<div class="accauntBox" id="clockpoint_restrictions">
+					<div class="modal-accauntBg">
+					</div>
+				    <div class="modal-body accaunt-height">
+				        <div class="row">
+				            <div class="col-xs-12 col-sm-12 col-md-8">
+				                <h2 class="accaunt-title">Clockpoint restrictions</h2>
+				                <p class="accaunt-box-inertext">
+				                    Would you like to restrict your employee from clocking in outside your company's IP adress?
+				                </p>
+				                <div class="row">
+				                    <div class="col-sm-4">
+				                        <div class="form-group" id="clockpoint_restrictions_location">
+				                            <p>Enter location name</p>
+				                            <label class="radio-inline">
+				                                <input type="radio" name="inlineRadioOptions" value="option21"><span>Yes</span>
+				                            </label>
+				                            <label class="radio-inline">
+				                                <input type="radio" name="inlineRadioOptions" value="option22"><span>No</span>
+				                            </label>
+				                        </div>
+				                    </div>
+				                </div>
+				                <div class="row">
+				                    <div class="form-group" id="clockpoint_restrictions_location_input">
+				                        <input type="text" class="form-control" id="location-name" placeholder="Example: Warehouse, Store # 2257">
+				                    </div>
+				                </div>
+				                <div class="row">
+				                    <div class="col-sm-12">
+				                        <div id="clockpoint_restrictions_ip" class="form-group">
+				                            <p>IP Adress</p>
+				                            <label class="radio-inline">
+				                                <input type="radio" name="inlineRadioOptions" value="option23"><span>Current IP <b>267.323.34.123</b></span>
+				                            </label>
+				                            <label class="radio-inline">
+				                                <input type="radio" name="inlineRadioOptions" value="option24"><span>Manually Enter IP</span>
+				                            </label>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="col-xs-12 col-sm-12 col-md-4">
+				                <div class="accaunt-left-header">
+									<div class="accaunt-progressBar">
+										<div class="accaunt-progressBar-content accaunt-progressBar-content-85"></div>
+									</div>
+									<div class="progress-bar-procents progress-bar-procents-85">
+									85%
+									</div>
+				                </div>
+				                <h4 class="accaunt-subtitle-left">
+				            		You're almost done! You're set up is 85% complete!
+				           			</h4>
+				                <p class="accaunt-text-simple">
+				                    Clockpoints are available to ensure your employees are onsite when clocking in
+				                </p>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="modal-footer">
+				        <div class="row">
+				            <div class="col-xs-12 col-sm-12 col-md-8 pl0">
+				                <a href="#" class="prevEl btn btn-back pull-left">Back</a>
+				                <a href="#" class="nextEl btn btn-primary pull-left">Next</a>
+				                <a href="#" class="accaunt-skip">Skip</a>
+				            </div>
+				            <div class="col-xs-12 col-sm-12 col-md-4">
+				                <p class="accaunt-text-questions">Have Questions? (866) 208-7618</p>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="accauntBox radio-inline-margin" id="push_notifications">
+					<div class="modal-accauntBg">
+					</div>
+				    <div class="modal-body accaunt-height">
+				        <div class="row">
+				            <div class="col-xs-12 col-sm-12 col-md-8">
+				                <h2 class="accaunt-title">Push Notifications</h2>
+				                <div class="row">
+				                    <div class="col-sm-12">
+				                        <div class="form-group" id="push_notifications_out">
+				                            <p class="bold">Would you like to receive instant notifications to your cell phone when your employees clock in or out?</p>
+				                            <p>(You must download the Time Clock Wizard mobile app to receive push notifications.)</p>
+				                            <label class="radio-inline">
+				                                <input type="radio" name="inlineRadioOptions" value="option21"><span>Yes</span>
+				                            </label>
+				                            <label class="radio-inline">
+				                                <input type="radio" name="inlineRadioOptions" value="option22"><span>No</span>
+				                            </label>
+				                        </div>
+				                    </div>
+				                </div>
+				                <div class="row">
+				                    <div class="col-sm-12">
+				                        <div class="form-group" id="push_notifications_app">
+				                            <p class="bold">Would you like us to send you a text message with a link to the mobile app?</p>
+				                            <label class="radio-inline">
+				                                <input type="radio" name="inlineRadioOptions" value="option21"><span>Yes</span>
+				                            </label>
+				                            <label class="radio-inline">
+				                                <input type="radio" name="inlineRadioOptions" value="option22"><span>No</span>
+				                            </label>
+				                        </div>
+				                    </div>
+				                </div>
+				                <div class="row">
+				                    <div class="form-group" id="push_notifications_phone">
+				                        <input type="text" class="form-control" placeholder="Enter your phone number">
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="col-xs-12 col-sm-12 col-md-4">
+				                <div class="accaunt-left-header">
+									<div class="accaunt-progressBar">
+										<div class="accaunt-progressBar-content accaunt-progressBar-content-95"></div>
+									</div>
+									<div class="progress-bar-procents progress-bar-procents-95">95%</div>
+				                </div>
+				                <h4 class="accaunt-subtitle-left">
+				            You're almost done! You're set up is 95% complete!
+				           </h4>
+				                <p class="accaunt-text-simple">
+				                    You and your team can have on-the-go access to Time Clock Wizard by downloading our mobile app.
+				                </p>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="modal-footer">
+				        <div class="row">
+				            <div class="col-xs-12 col-sm-12 col-md-8 pl0">
+				                <a href="#" class="prevEl btn btn-back pull-left">Back</a>
+				                <a href="#" class="nextEl btn btn-primary pull-left">Next</a>
+				                <a href="#" class="accaunt-skip">Skip</a>
+				            </div>
+				            <div class="col-xs-12 col-sm-12 col-md-4">
+				                <p class="accaunt-text-questions">Have Questions? (866) 208-7618</p>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="accauntBox reg_loader">
+		    		<div class="modal-header">
+		    			<h2 class="accaunt-title_tankyou">Thank you</h2>
+		    		</div>
+		    		<div class="modal-body">
+		    			<div class="row">
+		    				<div class="col-xs-12">
+		    					<p class="accaunt-text_tankyou">
+		    						Please wait a moment while we create your <br>account
+		    					</p>
+		    					<div class="accaunt-clock-wrap">
+		    						<img src="img/loader3.gif">
+		    					</div>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+
+				<div class="accauntBox" id="reg_congratulation">
+				    <div class="modal-body">
+				        <div class="row">
+				            <div class="col-sm-12">
+				                <h2>Congratulation!</h2>
+				                <h3>100% You're finished!</h3>
+				                <div id="line_congratulation_wrap">
+				                    <div id="line_congratulation">
+				                    	
+				                    </div>
+				                    <div id="line_congratulation_bg"></div>
+				                </div>
+				                <p>Customize more settings by clicking the Settings tab.</p>
+				                <div id="reg_congratulation_link"><a href="#">Customize more settings</a></div>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/createGraphic.js"></script>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery.groupinputs.min.js" ></script>
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+    <script type="text/javascript" src="js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+    <script src="js/accaunt.js"></script>
+    <script>
+        $(document).ready(function() {
+       		$('#accaunt-data').datetimepicker({pickTime: false,language: 'en',defaultDate:"27.01.2017",daysOfWeekDisabled:[12,6]}); 
+       		 $('.codeOne').groupinputs();
+        });
+        
+    </script> 
+  </body>
+</html>
